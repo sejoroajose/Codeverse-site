@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form action="send_email.php" method="post">
+            <label for="name">First Name:</label><br>
+            <input type="text" id="fname" required name="name" placeholder="" oninput="this.className = ''"><br>
+            <label for="name">Last Name:</label><br>
+            <input type="text" id="lname" required name="name" placeholder="" oninput="this.className = ''"><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" required name="email" placeholder="enter your email address" oninput="this.className = ''"><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" required name="phone" inputmode="tel" value="+234" oninput="this.className = ''"><br>
+            <label for="age">Age:</label><br>
+            <input type="number" oninput="this.className = ''"><br>   
+            <label for="gender">Gender:</label><br>
+            <select name="Gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br>
+            <label for="state">State of Residence:</label><br>
+                <select name="State" id="state">
+                    <option>LAGOS</option>
+                    <option>ABUJA FCT</option>
+                    <option>ABIA</option>
+                    <option>ADAMAWA</option>
+                    <option>AKWA IBOM</option>
+                    <option>ANAMBRA</option>
+                    <option>BAUCHI</option>
+                    <option>BAYELSA</option>
+                    <option>BENUE</option>
+                    <option>BORNO</option>
+                    <option>CROSS RIVER</option>
+                    <option>DELTA</option>
+                    <option>EBONYI</option>
+                    <option>EDO</option>
+                    <option>EKITI</option>
+                    <option>ENUGU</option>
+                    <option>GOMBE</option>
+                    <option>IMO</option>
+                    <option>JIGAWA</option>
+                    <option>KADUNA</option>
+                    <option>KANO</option>
+                    <option>KATSINA</option>
+                    <option>KEBBI</option>
+                    <option>KOGI</option>
+                    <option>KWARA</option>                
+                    <option>NASSARAWA</option>
+                    <option>NIGER</option>
+                    <option>OGUN</option>
+                    <option>ONDO</option>
+                    <option>OSUN</option>
+                    <option>OYO</option>
+                    <option>PLATEAU</option>
+                    <option>RIVERS</option>
+                    <option>SOKOTO</option>
+                    <option>TARABA</option>
+                    <option>YOBE</option>
+                    <option>ZAMFARA</option>
+                </select><br>
+            <label for="gadget">Do you have access to a desktop or laptop 
+                and reliable high speed internet?</label><br>
+            <select required>
+                <option value="option1">YES</option>
+                <option value="option2">NO</option>
+            </select><br>
+            <label for="choice">Are you willing to fully pay for this program or you 
+                    will like to benefit from our scholarship scheme?</label><br>
+            <select required>
+                <option value="option1">Fully Pay</option>
+                <option value="option2">Scholarship</option>
+            </select><br>
+          
+            <input type="submit" value="Submit Application">
+        </form>
+            <script src="index.js"></script>
+    </body>
+</html>
